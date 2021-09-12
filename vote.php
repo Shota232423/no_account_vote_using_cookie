@@ -13,6 +13,7 @@
     //ボタンが押されたらcookieをブラウザにセットする
     if (!empty($_GET)) {
         setcookie('is_pushed', $_GET['is_pushed'], time()+60*60*24);
+        header('location:vote.php');
     }
     ?>
     <form action="" method="GET">
